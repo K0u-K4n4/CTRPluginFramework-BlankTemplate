@@ -7,7 +7,8 @@
 
 namespace CTRPluginFramework
 {
-    using StringVector = std::vector<std::string>;
-
+  void KeyStrokesButtom(MenuEntry* entry);
+  void KeyStrokesPad(MenuEntry* entry);
+  void KeyStrokesDPad(MenuEntry* entry);
 }
 #endif
