@@ -69,24 +69,16 @@ exit:
 
     void    InitMenu(PluginMenu &menu)
     {
-        // Create your entries here, or elsewhere
-        // You can create your entries whenever/wherever you feel like it
-        
-        // Example entry
-        /*menu += new MenuEntry("Test", nullptr, [](MenuEntry *entry)
-        {
-            std::string body("What's the answer ?\n");
-
-            body += std::to_string(42);
-
-            MessageBox("UA", body)();
-        });*/
+      menu += new MenuEntry("Buttom" , KeyStrokesButtom);
+      menu += new MenuEntry("Pad" , KeyStrokesPad);
+      menu += new MenuEntry("Dpad" , KeyStrokesDPad);
+      menu += new MenuEntry("Player Info In quest" , Readanim);
+      menu += new MenuEntry("Player Info" , Readanim2 );
     }
 
     int     main(void)
     {
-        PluginMenu *menu = new PluginMenu("Action Replay", 0, 7, 1,
-                                            "A blank template plugin.\nGives you access to the ActionReplay and others tools.");
+        PluginMenu *menu = new PluginMenu("Sogmu Plugin                       CTRPF ver", 0, 7, 1,"Sogmu\nNo Hax\nPlugin\nMade By Kou Kana");
 
         // Synnchronize the menu with frame event
         menu->SynchronizeWithFrame(true);
