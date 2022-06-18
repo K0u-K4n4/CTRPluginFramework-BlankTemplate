@@ -1,4 +1,5 @@
 #include <3ds.h>
+#include "cheats.hpp"
 #include "csvc.h"
 #include <CTRPluginFramework.hpp>
 
