@@ -70,7 +70,7 @@ exit:
     void    InitMenu(PluginMenu &menu)
     {
 　　　*menu += new MenuEntry("お守り生成", nullptr, Gene, "お守りを生成できます。");
-　　　*menu += new MenuEntry("機能ID_1設定", nullptr, bh3, "機能ID_1を設定できます（匠など）);
+　　　*menu += new MenuEntry("機能ID_1設定", nullptr, bh3, "機能ID_1を設定できます（匠など）");
 　　　*menu += new MenuEntry("機能ID_2設定", nullptr, bh4, "機能ID_2を設定できます（匠など）");
 　　　*menu += new MenuEntry("バフレベル設定（バフ欄1）", nullptr, bh1, "バフの設定をできます");
 　　　*menu += new MenuEntry("バフレベル設定（バフ欄1）", nullptr, bh2, "バフの設定をできます");
