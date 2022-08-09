@@ -34,7 +34,7 @@ void  omam(MenuEntry*) {
   if(oma>=12||oma<1){
     oma=1;
   }
-  Process::Write16(0x833BDBC, oma);
+  Process::Write16(0x833BDAC, oma);
 }
 void bh3(MenuEntry*) {
   u8 bahh3;
