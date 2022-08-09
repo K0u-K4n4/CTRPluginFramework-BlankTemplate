@@ -31,7 +31,7 @@ void  omam(MenuEntry*) {
   if (!(GetInput(oma,"お守りのレベル（兵士や闘士など）を入力してください"))) {
     return;
   }
-  if(oma>=12||oma<1){
+  if(oma>=17||oma<1){
     oma=1;
   }
   Process::Write16(0x833BDAC, oma);
