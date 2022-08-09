@@ -14,21 +14,21 @@ void bh1(MenuEntry*) {
 
   u8 bahh;
   
-  if (!GetInput(bahh),  "バフレベルを入力してください(機能IDを先に設定しないと空欄のままです)") {
+  if (!GetInput(bahh,  "バフレベルを入力してください(機能IDを先に設定しないと空欄のままです") {
     return;
   }
   Process::Write16(0x833BDB8, bahh);
 }
 void  bh2(MenuEntry*) {
   u8 bahh2;
-  if (!GetInput(bahh2), "バフレベルを入力してください(機能IDを先に設定しないと空欄のままです)") {
+  if (!GetInput(bahh2, "バフレベルを入力してください(機能IDを先に設定しないと空欄のままです") {
     return;
   }
   Process::Write16(0x833BDBC, bahh2);
 }
 void  omam(MenuEntry*) {
   u8 oma;
-  if (!GetInput(oma),"お守りのレベル（兵士や闘士など）を入力してください") {
+  if (!GetInput(oma,"お守りのレベル（兵士や闘士など）を入力してください") {
     return;
   }
   if(oma>=12||oma<1){
@@ -38,14 +38,14 @@ void  omam(MenuEntry*) {
 }
 void bh3(MenuEntry*) {
   u8 bahh3;
-  if (!GetInput(bahh3), "機能ID_1を設定してください（匠など）") {
+  if (!GetInput(bahh3, "機能ID_1を設定してください（匠など）") {
     return;
   }
   Process::Write16(0x833BDB6, bahh3);
 }
 void  bh4(MenuEntry*) {
   u8 bahh4;
-  if (!GetInput(bahh4),  "機能ID_2を設定してください（匠など）") {
+  if (!GetInput(bahh4,  "機能ID_2を設定してください（匠など）") {
     return;
   }
   Process::Write16(0x833BDBA, bahh4);
@@ -55,7 +55,7 @@ void  bh4(MenuEntry*) {
 void  sous1(MenuEntry*) {
   u8 sou;
 
-  if (!GetInput(sou),"装飾品の設定_1") {
+  if (!GetInput(sou,"装飾品の設定_1") {
     return;
   }
   Process::Write16(0x833BDB0, sou);
@@ -63,14 +63,14 @@ void  sous1(MenuEntry*) {
 void sous2(MenuEntry*) {
   u8 sou2;
 
-  if (!GetInput(sou2),"装飾品の設定_2") {
+  if (!GetInput(sou2,"装飾品の設定_2") {
     return;
   }
   Process::Write16(0x833BDB2, sou2);
 }
 void  sous3(MenuEntry*) {
   u8 sou3;
-  if (!GetInput(sou3),  "装飾品の設定_3") {
+  if (!GetInput(sou3,  "装飾品の設定_3") {
     return;
   }
   Process::Write16(0x833BDB4, sou3);
