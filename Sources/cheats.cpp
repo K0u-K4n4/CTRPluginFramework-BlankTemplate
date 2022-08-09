@@ -42,7 +42,7 @@ void bh3(MenuEntry*) {
 }
 void  bh4(MenuEntry*) {
   u8 bahh4;
-  if (!GetInput,  "機能ID_2を設定してください（匠など）") {
+  if (!GetInput(bahh4),  "機能ID_2を設定してください（匠など）") {
     return;
   }
   Process::Write16(0x833BDBA, bahh4);
