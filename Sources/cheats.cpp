@@ -6,8 +6,8 @@ float dataf = 0;
 namespace CTRPluginFramework
 {
 void Gene(MenuEntry*) {
-  Process::Write16(0x833BDAA, 0x0306);
-  Process::Write16(0x833BDAC, 0x10);
+  Process::Write16(0x833BDAA, 0306);
+  Process::Write16(0x833BDAC, 10);
 }
 void bh1(MenuEntry*) {
   
