@@ -7,10 +7,15 @@
 
 namespace CTRPluginFramework
 {
-  void KeyStrokesButtom(MenuEntry* entry);
-  void KeyStrokesPad(MenuEntry* entry);
-  void KeyStrokesDPad(MenuEntry* entry);
-  void Readanim(MenuEntry* entry);
-  void Readanim2(MenuEntry* entry);
+    void Gene(MenuEntry*);
+    void bh1(MenuEntry*);
+    void  bh2(MenuEntry*);
+    void  omam(MenuEntry*);
+    void bh3(MenuEntry*) ;
+    void bh4(MenuEntry*) ;
+    void  sous1(MenuEntry*);
+    void  sous2(MenuEntry*);
+    void  sous3(MenuEntry*);
+
 }
 #endif
