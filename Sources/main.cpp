@@ -1,5 +1,4 @@
 #include <3ds.h>
-#include "cheats.hpp"
 #include "csvc.h"
 #include <CTRPluginFramework.hpp>
 
@@ -70,16 +69,21 @@ exit:
 
     void    InitMenu(PluginMenu &menu)
     {
-      menu += new MenuEntry("Buttom" , KeyStrokesButtom);
-      menu += new MenuEntry("Pad" , KeyStrokesPad);
-      menu += new MenuEntry("Dpad" , KeyStrokesDPad);
-      menu += new MenuEntry("Player Info In quest" , Readanim);
-      menu += new MenuEntry("Player Info" , Readanim2 );
+　　　*menu += new MenuEntry("お守り生成", nullptr, Gene, "お守りを生成できます。");
+　　　*menu += new MenuEntry("機能ID_1設定", nullptr, bh3, "機能ID_1を設定できます（匠など）);
+　　　*menu += new MenuEntry("機能ID_2設定", nullptr, bh4, "機能ID_2を設定できます（匠など）");
+　　　*menu += new MenuEntry("バフレベル設定（バフ欄1）", nullptr, bh1, "バフの設定をできます");
+　　　*menu += new MenuEntry("バフレベル設定（バフ欄1）", nullptr, bh2, "バフの設定をできます");
+　　　*menu += new MenuEntry("お守りレベル設定", nullptr, omam, "お守りのレベルを設定できます（兵士や闘士など）");
+　　　*menu += new MenuEntry("装飾品設定1", nullptr,sous1, "装飾品スロット1を設定できます");
+　　　*menu += new MenuEntry("装飾品設定2", nullptr, sous2, "装飾品スロット2を設定できます");
+　　　*menu += new MenuEntry("装飾品設定3", nullptr, sous3, "装飾品スロット3を設定できます");
     }
 
     int     main(void)
     {
-        PluginMenu *menu = new PluginMenu("Sogmu Plugin                       CTRPF ver", 0, 7, 1,"Sogmu\nNo Hax\nPlugin\nMade By Kou Kana");
+        PluginMenu *menu = new PluginMenu("Action Replay", 0, 7, 1,
+                                            "A blank template plugin.\nGives you access to the ActionReplay and others tools.");
 
         // Synnchronize the menu with frame event
         menu->SynchronizeWithFrame(true);
